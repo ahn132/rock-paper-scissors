@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+div {
+    text-align: center;
+    flex: 1 0 0;
+}
+
+img {
+    width: 8em;
+    height: 8em;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+#header-panel {
+    background-color: blanchedalmond;
+    height: 10%;
+    padding-top: 2em;
+}
+
+#game-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    height: 70%;
+    font-size: 30px;
+}
+
+#titles {
+    display: flex;
+}
+
+#imgs {
+    display: flex;
+    justify-content: space-around;
+    flex: 0 0 10em;
+}
+ 
+#buttons {
+    background-color: beige;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ 
+#buttons > button {
+    background-color: blanchedalmond;
+    width: 15%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+#score-panel {
+    background-color: blanchedalmond;
+    padding: 0.5em 2em;
+    height: 20%;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal-content {
+    background-color: antiquewhite;
+    position: fixed;
+    left: 25%;
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    padding: 1em;
+}
+
+#close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -5,10 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    
+    <div id="header-panel">
+        <h1>Rock, Paper, Scissors!</h1>
+    </div>
+    <div id="game-panel">
+        <div id="titles">
+            <div>
+                <p>You</p>
+            </div>
+            <div>
+                <p>Computer</p>
+            </div>
+        </div>
+        <div id="imgs">
+        </div>
+        <div id="buttons">
+            <button value="rock" class="playerChoice">Rock</button>
+            <button value="paper" class="playerChoice">Paper</button>
+            <button value="scissors" class="playerChoice">Scissors</button>
+        </div>
+    </div>
+    <div id="score-panel">
+        <h2 id="round-result"></h2>
+        <h2 id="score">Score: 0 - 0</h2>
+    </div>
+    <div id="modal">
+        <div id="modal-content">
+            <span id = "close">&times;</span>
+            <h1 id="final-outcome">You Won/Lost!</h1>
+            <h2 id="final-score">Final Score: ? - ?</h2>
+            <p>Refresh the page to play again</p>
+        </div>
+    </div>
 </body>
-</html>>
+</html>
